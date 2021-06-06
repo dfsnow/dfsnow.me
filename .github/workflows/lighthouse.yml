@@ -11,8 +11,9 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "0.81.0"
+          extended: true
 
-      - name: Build
+      - name: Build site
         run: hugo
 
       - name: Run Lighthouse
